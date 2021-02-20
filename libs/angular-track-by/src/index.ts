@@ -1,1 +1,1 @@
-export * from './lib/angular-track-by.module';
+export { trackByFunctions } from './lib/track-by-functions';
