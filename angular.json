@@ -142,6 +142,43 @@
           }
         }
       }
+    },
+    "angular-track-by": {
+      "projectType": "library",
+      "root": "libs/angular-track-by",
+      "sourceRoot": "libs/angular-track-by/src",
+      "prefix": "angular-track-by",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "options": {
+            "tsConfig": "libs/angular-track-by/tsconfig.lib.json",
+            "project": "libs/angular-track-by/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/angular-track-by/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/angular-track-by/src/**/*.ts",
+              "libs/angular-track-by/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/angular-track-by"],
+          "options": {
+            "jestConfig": "libs/angular-track-by/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   }
 }
