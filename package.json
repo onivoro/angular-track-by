@@ -1,6 +1,6 @@
 {
   "name": "@onivoro/angular-track-by",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "nx",
@@ -25,7 +25,7 @@
     "workspace-generator": "nx workspace-generator",
     "dep-graph": "nx dep-graph",
     "help": "nx help",
-    "release": "rm -rf dist && npm run build && npm version minor && cd dist && npm publish --access public"
+    "release": "rm -rf dist && npm run build && npm version minor && cp package.json dist && cd dist && npm publish --access public"
   },
   "private": true,
   "dependencies": {
