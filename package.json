@@ -27,7 +27,6 @@
     "help": "nx help",
     "release": "rm -rf dist && npm run build && npm version minor && cp package.json dist && cd dist && npm publish --access public"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^11.2.0",
     "@angular/common": "^11.2.0",
