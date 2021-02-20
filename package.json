@@ -24,7 +24,8 @@
     "update": "nx migrate latest",
     "workspace-generator": "nx workspace-generator",
     "dep-graph": "nx dep-graph",
-    "help": "nx help"
+    "help": "nx help",
+    "release": "rm -rf dist && npm run build && npm version minor && cd dist && npm publish --access public"
   },
   "private": true,
   "dependencies": {
