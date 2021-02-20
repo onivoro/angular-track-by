@@ -16,8 +16,6 @@
     }
   },
   "projects": {
-    "delete": { "tags": [] },
-    "delete-e2e": { "tags": [], "implicitDependencies": ["delete"] },
     "angular-track-by": { "tags": [] }
   }
 }
