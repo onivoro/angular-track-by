@@ -1,9 +1,7 @@
-import { TrackByFunction } from '@angular/core';
-
 const _onMissingHandler = (item: any, property: string) =>
   console.warn(item, property);
 
-const by = (property: string, onMissingHandler?: any): TrackByFunction<any> => {
+const by = (property: string, onMissingHandler?: any): any => {
   return (_index: number, item: any) => {
     const id = item[property];
 
